@@ -31,7 +31,7 @@ public class CalculatorTest {
 	@Test
 	public void testSum() {
 		int result = calculator.sum(3, 4);
-
+		System.out.println("testSum: " + result);
 		assertEquals(7, result);
 	}
 
@@ -39,7 +39,7 @@ public class CalculatorTest {
 	public void testDivison() {
 		try {
 			int result = calculator.divison(10, 2);
-
+            System.out.println("testDivision: " + result);
 			assertEquals(5, result);
 		} catch (Exception e) {
 			e.printStackTrace(System.err);
